@@ -50,9 +50,9 @@ git clone https://github.com/mtcp-stack/mtcp
  **编译的时候也会报错！！！如果编译的时候netdevice.h报错，可能是结构体变量名没有和内核保持一致。**
  
  找到报错的文件，根据内核定义的结构体修改变量名。我的修改如下：
- - ndo_change_mtu -> ndo_change_mturh74
- - ndo_set_vf_vlan -> ndo_set_vf_vlan_rh73
- - ndo_setup_tc -> ndo_setup_tc_rh72
+    ndo_change_mtu -> ndo_change_mturh74
+    ndo_set_vf_vlan -> ndo_set_vf_vlan_rh73
+    ndo_setup_tc -> ndo_setup_tc_rh72
  
   * 启用网卡
     ```bash
@@ -62,6 +62,7 @@ git clone https://github.com/mtcp-stack/mtcp
      ```
  
   *  装mtcp库
+  
     ```bash
     ./configure --with-dpdk-lib=$RTE_SDK/$RTE_TARGET
    	make
