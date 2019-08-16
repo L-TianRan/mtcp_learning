@@ -50,16 +50,16 @@ name: dpdk0, ifindex: 0, hwaddr: 9C:E3:74:16:FF:6F, ipaddr: 172.16.111.100, netm
 Number of NIC queues: 16
 ---------------------------------------------------------------------------------
 Loading routing configurations from : config/route.conf
-fopen: No such file or directory
+fopen: No such file or directory                          //没有路由表
 Skip loading static routing table
 Routes:
 Destination: 172.16.111.0/24, Mask: 255.255.255.0, Masked: 172.16.111.0, Route: ifdx-0
 ---------------------------------------------------------------------------------
 Loading ARP table from : config/arp.conf
-fopen: No such file or directory
+fopen: No such file or directory                            //没有arp表
 Skip loading static ARP table
 ARP Table:
-(blank)            //这里是空的
+(blank)            
 ---------------------------------------------------------------------------------
 Initializing port 0... Ethdev port_id=0 nb_rx_queues=16 > 8    //错在这里了
 EAL: Error - exiting with code: 1
