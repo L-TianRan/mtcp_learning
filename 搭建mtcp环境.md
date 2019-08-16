@@ -52,7 +52,7 @@ git clone https://github.com/mtcp-stack/mtcp
  
  找到报错的文件，根据内核定义的结构体修改变量名。我的修改如下：
  
-    ndo_change_mtu -> ndo_change_mturh74
+    ndo_change_mtu -> ndo_change_mtu_rh74
     ndo_set_vf_vlan -> ndo_set_vf_vlan_rh73
     ndo_setup_tc -> ndo_setup_tc_rh72
  
