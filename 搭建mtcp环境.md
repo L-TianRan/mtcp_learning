@@ -57,11 +57,11 @@ git clone https://github.com/mtcp-stack/mtcp
     ndo_setup_tc -> ndo_setup_tc_rh72
  
   * 启用网卡
-    ```bash
+  ```
     sudo ifconfig dpdk0 x.x.x.x netmask 255.255.255.0 up
     export RTE_SDK=`echo $PWD`/dpdk   
     export RTE_TARGET=x86_64-native-linuxapp-gcc
-     ```
+   ```
  
   *  装mtcp库
   
