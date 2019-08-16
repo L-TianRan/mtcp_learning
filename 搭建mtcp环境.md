@@ -65,10 +65,10 @@ git clone https://github.com/mtcp-stack/mtcp
  
   *  装mtcp库
   
-    ```bash
+  ```
     ./configure --with-dpdk-lib=$RTE_SDK/$RTE_TARGET
    	make
-    ```
+  ```
     
  在执行`./configure`的时候可能会报错。我这里报了一个找不到`gmp.h`
  
