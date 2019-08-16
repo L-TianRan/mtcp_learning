@@ -37,12 +37,13 @@ git clone https://github.com/mtcp-stack/mtcp
  ./setup_mtcp_dpdk_env.sh /home/username/mtcp/dpdk
  ```
  接着往下执行
- - Press [15] to compile x86_64-native-linuxapp-gcc version
- - Press [18] to install igb_uio driver for Intel NICs
- - Press [22] to setup 2048 2MB hugepages
- - Press [24] to register the Ethernet ports
- - Press [35] to quit the tool
- 
+```
+ Press [15] to compile x86_64-native-linuxapp-gcc version
+ Press [18] to install igb_uio driver for Intel NICs
+ Press [22] to setup 2048 2MB hugepages
+ Press [24] to register the Ethernet ports
+ Press [35] to quit the tool
+```
  在第24项选择网卡时，一定要选择未使用的网卡。输入的PCI地址`0000:02:00.3`类似这种格式。[如何获取网卡的PCI地址](https://askubuntu.com/questions/654820/how-to-find-pci-address-of-an-ethernet-interface)
  
  接着可以查看用`ifconfig -a`查看网卡，会多一个dpdk0网卡。
